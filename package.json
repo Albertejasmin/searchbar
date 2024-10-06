@@ -1,0 +1,30 @@
+{
+  "name": "booking-site",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/lab": "^5.0.0-alpha.129",
+    "@mui/material": "^5.13.3",
+    "@mui/x-date-pickers": "^6.4.0",
+    "@zeit/next-css": "^1.0.1",
+    "dayjs": "^1.11.7",
+    "install": "^0.13.0",
+    "next": "13.4.1",
+    "npm": "^9.6.7",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.43.9",
+    "react-input-mask": "^2.0.4",
+    "react-number-format": "^5.2.1",
+    "react-router-dom": "^6.11.2"
+  }
+}

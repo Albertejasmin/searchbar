@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.stickyNavigation {
+  position: static;
+}
+
+:root {
+  --heading: condor-extended, sans-serif;
+  --paragraph: eurostile, sans-serif;
+  --h1: clamp(2.5rem, 0.7857rem + 7.3143vw, 6.5rem);
+  --h2: clamp(2.5rem, 1.4286rem + 4.5714vw, 5rem);
+  --h3: clamp(2.5rem, 1.8571rem + 2.7429vw, 4rem);
+  --h4: clamp(2.5rem, 2.3714rem + 0.5486vw, 2.8rem);
+  --p: clamp(1.3rem, 1.1667rem + 0.5333vw, 1.6rem);
+  --p-footer: 1.875rem;
+}
+.link {
+  font-family: var(--heading);
+}
+img {
+  width: 100%;
+}
+
+h1 {
+  font-family: var(--heading);
+  font-size: var(--h1);
+  text-align: center;
+  margin-top: 5rem;
+}
+
+h2 {
+  font-family: var(--heading);
+  font-size: var(--h2);
+}
+h3 {
+  font-family: var(--paragraph);
+  font-size: var(--h3);
+  font-weight: 500;
+}
+
+h4 {
+  font-family: var(--heading);
+  font-size: var(--h4);
+  font-weight: 500;
+}
+p {
+  font-family: var(--paragraph);
+  font-size: var(--p);
+}
+
+button {
+  border: #000 solid 2px;
+  width: 20rem;
+  height: 3rem;
+  background-color: transparent;
+  font-family: var(--paragraph);
+}
+button:hover {
+  cursor: pointer;
+}
+
+.landing-background {
+  background: rgb(75, 242, 211);
+  background: linear-gradient(180deg, rgba(75, 242, 211, 1) 15%, rgba(166, 235, 38, 1) 48%, rgba(1, 54, 231, 1) 82%);
+}
+.program-background {
+  background: rgb(202, 88, 231);
+  background: linear-gradient(180deg, rgba(202, 88, 231, 1) 15%, rgba(235, 38, 60, 1) 45%, rgba(232, 176, 82, 1) 82%);
+}
+.schedule-background {
+  background: rgb(104, 231, 88);
+  background: linear-gradient(180deg, rgba(104, 231, 88, 1) 15%, rgba(129, 38, 235, 1) 45%, rgba(82, 230, 232, 1) 82%);
+}
+.default-background {
+  background: rgb(63, 94, 251);
+  background: radial-gradient(circle, rgba(63, 94, 251, 1) 31%, rgba(252, 135, 70, 1) 100%);
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  border-top: solid 2px black;
+  padding: 2rem 4rem;
+}
+
+.footerContainer h4 {
+  font-weight: bold;
+  font-size: var(--p);
+}
+.footerInfoBox {
+  display: flex;
+  gap: 3rem;
+}
+.footerHeading {
+  font-size: var(--p-footer);
+  font-weight: bold;
+}
+
+@media (max-width: 750px) {
+  .footerContainer,
+  .footerInfoBox {
+    flex-wrap: wrap;
+    row-gap: 2rem;
+  }
+}

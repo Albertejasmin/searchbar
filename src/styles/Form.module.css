@@ -1,0 +1,190 @@
+/* FONTS SIZES FORM */
+
+.h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.p {
+  font-size: 1.5rem;
+}
+.p:first-child {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.bold {
+  font-weight: bold;
+}
+.body {
+  display: grid;
+  place-content: center;
+  margin-top: 2rem;
+}
+
+.form {
+  display: grid;
+  place-content: center;
+  margin-top: 2rem;
+}
+.formBackground {
+  background-image: url("/ticket.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.formWrapper {
+  display: grid;
+  margin-bottom: 1.8rem;
+  min-width: 400px;
+}
+.containerTicketInfo {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.formControl {
+  display: grid;
+  place-content: center;
+}
+.overviewText {
+  font-family: var(--paragraph);
+  font-size: 2rem;
+}
+
+/* retter label tekst på dropdown */
+.dropdownLabel {
+  position: relative;
+  display: inline-flex;
+  left: 0;
+  bottom: 0;
+  top: 20px;
+}
+
+.inputField {
+  max-width: 350px;
+}
+
+.ticketNumber {
+  margin-top: 2.5rem;
+  max-width: 350px;
+}
+
+.campText p {
+  margin: 0px;
+  font-size: 1.5rem;
+  margin-block: 1rem;
+  text-align: left;
+}
+.tentOption {
+  text-align: left;
+}
+
+/* Overview box */
+.overviewContainer {
+  border: 1px solid black;
+  padding: 2rem;
+  min-width: 365px;
+  max-width: 400px;
+  margin-bottom: 2rem;
+}
+
+.overviewContainerConfirm {
+  padding: 2rem;
+  margin-bottom: 2rem;
+  display: grid;
+  place-content: center;
+}
+.overviewContainerConfirm p {
+  margin-bottom: 0.5rem;
+}
+.pID {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.atendee_container {
+  display: grid;
+}
+
+/* Form buttons */
+.btn_container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.addBtn {
+  max-width: 20px;
+  max-height: 20px;
+  margin-block: 5px;
+}
+.addBtnWrapper {
+  margin-bottom: 1rem;
+}
+
+.buttonWrapper {
+  display: grid;
+  place-content: center;
+}
+
+.btnText {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 1rem;
+  margin-left: 2rem;
+}
+.addBtnWrapper div {
+  margin-left: 1.6rem;
+}
+.noStyleBtn {
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  width: auto;
+  height: 0px;
+}
+.tent_button_container {
+  display: flex;
+  flex-direction: row;
+}
+
+/* DESKTOP */
+@media (min-width: 750px) {
+  /* form Pay overview */
+  .body {
+    align-content: start;
+    justify-content: center;
+    gap: 1rem;
+  }
+  /* NYT til form_pay */
+  .nySection {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 750px) {
+  /* form Pay overview */
+  .h2 {
+    font-size: 1.5rem;
+  }
+
+  /* confirmation styling af ticket */
+  .overviewContainerConfirm p {
+    font-size: 1rem;
+  }
+  .overviewContainerConfirm p:first-child {
+    font-size: 1rem;
+  }
+  .formBackground {
+    background-image: url("/ticket_vertical.svg");
+    background-size: contain;
+    padding: 5rem;
+  }
+
+  .overviewContainerConfirm {
+    max-width: 300px;
+    margin: auto;
+  }
+}
